@@ -545,20 +545,24 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.team-member,
+.contact-link {
   text-align: center;
   margin-bottom: 50px;
 }
-.team-member img {
+.team-member img,
+.contact-link img {
   margin: 0 auto;
   border: 7px solid white;
 }
-.team-member h4 {
+.team-member h4,
+.contact-link h4 {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
-.team-member p {
+.team-member p,
+.contact-link p {
   margin-top: 0;
 }
 #team .col-sm-4 {
@@ -584,51 +588,16 @@ section#contact {
 section#contact .section-heading {
   color: white;
 }
-section#contact .form-group {
-  margin-bottom: 25px;
+section#contact .col-sm-4 {
+  width: 25%;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
+section#contact .contact-link h4 {
+  margin-top: 10px;
+  color: white;
+  font-weight: normal;
 }
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-section#contact .form-control:focus {
-  border-color: #038fb1;
-  box-shadow: none;
-}
-section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact .text-danger {
-  color: #e74c3c;
+section#contact .contact-link .white {
+  color: white;
 }
 footer {
   padding: 25px 0;

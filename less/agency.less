@@ -519,7 +519,7 @@ section {
 
 // Team Section
 
-.team-member {
+.team-member, .contact-link{
 	text-align: center;
 	margin-bottom: 50px;
 	img {
@@ -568,45 +568,20 @@ section#contact {
 	.section-heading {
 		color: white;
 	}
-	.form-group {
-		margin-bottom: 25px;
-		input,
-		textarea {
-			padding: 20px;
+
+	.col-sm-4 {
+		width: 25%;
+	}
+
+	.contact-link {
+		h4 {
+			margin-top: 10px;
+			color: white;
+			font-weight: normal;
 		}
-		input.form-control {
-			height: auto;
+		.white {
+			color: white;
 		}
-		textarea.form-control {
-			height: 236px;
-		}
-	}
-	.form-control:focus {
-		border-color: @brand-primary;
-		box-shadow: none;
-	}
-	::-webkit-input-placeholder {
-	   .heading-font;
-	   font-weight: 700;
-	   color: @placeholder-text;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-	   .heading-font;
-	   font-weight: 700;
-	   color: @placeholder-text;
-	}
-	::-moz-placeholder {  /* Firefox 19+ */
-	   .heading-font;
-	   font-weight: 700;
-	   color: @placeholder-text;
-	}
-	:-ms-input-placeholder {  
-	   .heading-font;
-	   font-weight: 700;
-	   color: @placeholder-text;
-	}
-	.text-danger {
-		color: @brand-danger;
 	}
 }
 
