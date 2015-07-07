@@ -155,6 +155,11 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand.active {
   color: #02667f;
 }
+.navbar-default .navbar-brand .logo {
+  display: inline-block;
+  height: 1.5em;
+  margin-top: -0.5em;
+}
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
