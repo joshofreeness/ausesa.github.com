@@ -24,3 +24,46 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function opportunitiesScrollLeft(){
+	//check if already at the end
+	if (!$('#firstOpportunity').hasClass('hidden')){
+		return;
+	}
+	var current = $('#lastOpportunity');
+	//get to the first displayed div
+	while (current.hasClass('hidden')){
+		current = current.prev();
+	}
+	//hide it
+	current.addClass('hidden');
+	current = current.prev();
+	//get to the first hidden div
+	while (!current.hasClass('hidden')){
+		current = current.prev();
+	}
+	current.removeClass('hidden');
+
+}
+
+function opportunitiesScrollRight(){
+	//check if already at the end
+	if (!$('#lastOpportunity').hasClass('hidden')){
+		return;
+	}
+	var current = $('#firstOpportunity');
+	//get to the first displayed div
+	while (current.hasClass('hidden')){
+		current = current.next();
+	}
+	//hide it
+	current.addClass('hidden');
+	current = current.next();
+	//get to the first hidden div
+	while (!current.hasClass('hidden')){
+		current = current.next();
+	}
+	current.removeClass('hidden');
+
+}
+
