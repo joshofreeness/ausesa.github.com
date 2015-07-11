@@ -588,6 +588,20 @@ aside.clients img {
   margin: 50px auto;
   height: 50px;
 }
+aside.clients .vista img,
+aside.clients .orion img,
+aside.clients .xero img {
+  height: 100px;
+  margin: 25px auto;
+}
+@media all and (orientation: landscape) {
+  aside.clients .microsoft {
+    padding-left: 40px;
+  }
+  aside.clients .xero {
+    padding-left: 20px;
+  }
+}
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
