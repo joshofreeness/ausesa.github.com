@@ -26,44 +26,52 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 function opportunitiesScrollLeft(){
-	//check if already at the end
-	if (!$('#firstOpportunity').hasClass('hidden')){
-		return;
-	}
-	var current = $('#lastOpportunity');
-	//get to the first displayed div
-	while (current.hasClass('hidden')){
-		current = current.prev();
-	}
-	//hide it
-	current.addClass('hidden');
-	current = current.prev();
-	//get to the first hidden div
-	while (!current.hasClass('hidden')){
-		current = current.prev();
-	}
-	current.removeClass('hidden');
+	
+	var current = $('.opportunities-container .visible');
 
+	//if we are at the first one
+	if ($('.opportunities-container .visible')[0]==$('.opportunities-container div.page:first')[0]){
+		//scroll to last one
+		current.removeClass('visible');
+		current.addClass('hidden');
+
+		var next = $('.opportunities-container div.page:last');
+		next.removeClass('hidden');
+		next.addClass('visible');
+	} else {
+		//scroll to previous one
+		
+		current.removeClass('visible');
+		current.addClass('hidden');
+
+		var next = current.prev();
+		next.removeClass('hidden');
+		next.addClass('visible');
+	}
 }
 
 function opportunitiesScrollRight(){
-	//check if already at the end
-	if (!$('#lastOpportunity').hasClass('hidden')){
-		return;
-	}
-	var current = $('#firstOpportunity');
-	//get to the first displayed div
-	while (current.hasClass('hidden')){
-		current = current.next();
-	}
-	//hide it
-	current.addClass('hidden');
-	current = current.next();
-	//get to the first hidden div
-	while (!current.hasClass('hidden')){
-		current = current.next();
-	}
-	current.removeClass('hidden');
+	
+	var current = $('.opportunities-container .visible');
 
+	//if we are at the last one
+	if ($('.opportunities-container .visible')[0]==$('.opportunities-container div.page:last')[0]){
+		//scroll to first one
+		current.removeClass('visible');
+		current.addClass('hidden');
+
+		var next = $('.opportunities-container div.page:first');
+		next.removeClass('hidden');
+		next.addClass('visible');
+	} else {
+		//scroll to next one
+		
+		current.removeClass('visible');
+		current.addClass('hidden');
+
+		var next = current.next();
+		next.removeClass('hidden');
+		next.addClass('visible');
+	}
 }
 
