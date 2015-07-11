@@ -317,6 +317,14 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+#about img {
+  width: 100%;
+}
+#about .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none;
