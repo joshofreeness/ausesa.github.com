@@ -584,19 +584,9 @@ section h3.section-subheading {
 .contact-link p {
   margin-top: 0;
 }
-#team .col-sm-4 {
-  width: 20%;
-}
 aside.clients img {
   margin: 50px auto;
   height: 50px;
-}
-aside.clients .col-md-3 {
-  width: 26.6666%;
-}
-aside.clients .vista,
-aside.clients .xero {
-  width: 10%;
 }
 section#contact {
   background-color: #222222;
