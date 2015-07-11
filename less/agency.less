@@ -132,10 +132,19 @@ h1, h2, h3, h4, h5, h6 {
     			font-weight: 400;
     			letter-spacing: 1px;
     			color: white;
-    			&:hover,
+    			-webkit-transition: color 0.3s;
+    			-moz-transition: color 0.3s;
+    			transition: color 0.3s;
     			&:focus {
+    				color: white;
+    				outline: none;
+    			}
+    			&:hover{
     				color: @brand-primary;
     				outline: none;
+    				-webkit-transition: all 0.3s;
+    				-moz-transition: all 0.3s;
+    				transition: all 0.3s;
     			}
     		}
     	}
