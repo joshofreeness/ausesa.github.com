@@ -271,7 +271,13 @@ section {
 	text-transform: none;
 }
 
-.fa-stack:hover .fa-circle {color: darken(@brand-primary, 10%);}
+.fa-stack:hover .fa-circle {
+	color: darken(@brand-primary, 10%);
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
 
 .full-links {
 	font-style: italic;
@@ -585,10 +591,6 @@ section#contact {
 	background-repeat: no-repeat;
 	.section-heading {
 		color: white;
-	}
-
-	.col-sm-4 {
-		width: 25%;
 	}
 
 	.contact-link {
