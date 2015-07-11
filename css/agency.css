@@ -30,9 +30,24 @@ a {
   cursor: pointer;
   width: 140px;
   margin: auto;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: fill 0.3s;
+  -moz-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 .elevator:hover {
-  opacity: 0.7;
+  color: #038fb1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.elevator:hover svg {
+  fill: #038fb1;
+  -webkit-transition: fill 0.3s;
+  -moz-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 .elevator svg {
   width: 40px;
@@ -659,9 +674,6 @@ section#contact .contact-link h4 {
   color: white;
   font-weight: normal;
 }
-section#contact .contact-link .white {
-  color: white;
-}
 footer {
   padding: 25px 0;
   text-align: center;
@@ -678,6 +690,17 @@ footer ul.quicklinks {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+}
+footer .fork {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+footer .fork:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 ul.social-buttons {
   margin-bottom: 0;
@@ -706,6 +729,19 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
+}
+.btn {
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.btn:hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
