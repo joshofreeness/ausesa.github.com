@@ -321,11 +321,16 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
-.fa-stack:hover .fa-circle {
+a > .fa-stack:hover .fa-circle {
   color: #02667f;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+.fa-circle {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .full-links {
   font-style: italic;
@@ -456,6 +461,9 @@ section h3.section-subheading {
   border-radius: 100%;
   border: 7px solid #f1f1f1;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -492,6 +500,18 @@ section h3.section-subheading {
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
   margin-bottom: 0;
+}
+.timeline a {
+  color: white;
+}
+.timeline a:hover {
+  text-decoration: none;
+}
+.timeline a:hover .timeline-image {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #02667f;
 }
 @media (min-width: 768px) {
   .timeline:before {
@@ -541,6 +561,9 @@ section h3.section-subheading {
     margin-top: 30px;
     line-height: 26px;
   }
+  .timeline > li .get-involved h4 {
+    margin-top: 40px;
+  }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
@@ -559,6 +582,9 @@ section h3.section-subheading {
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
+  }
+  .timeline > li .get-involved h4 {
+    margin-top: 50px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
