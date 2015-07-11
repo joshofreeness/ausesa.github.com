@@ -180,12 +180,25 @@ fieldset[disabled] .btn-xl.active {
   color: #f7f7f7;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-  color: #02667f;
+.navbar-default .navbar-brand:focus {
+  color: #f7f7f7;
+  outline: none;
+}
+.navbar-default .navbar-brand:hover {
+  color: #038fb1;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar-default .navbar-brand .si-sesa-logo {
+  margin-right: 0.35em;
+  font-size: 1.1em;
+  color: #038fb1;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);

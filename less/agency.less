@@ -122,11 +122,24 @@ h1, h2, h3, h4, h5, h6 {
 	.navbar-brand {
 		color: @gray-lighter;
 		.heading-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-        	color: darken(@brand-primary, 10%);
+		-webkit-transition: color 0.3s;
+		-moz-transition: color 0.3s;
+		transition: color 0.3s;
+		&:focus {
+			color: @gray-lighter;
+			outline: none;
+		}
+		&:hover{
+			color: @brand-primary;
+			outline: none;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+        .si-sesa-logo {
+        	margin-right: 0.35em;
+        	font-size: 1.1em;
+        	color: @brand-primary;
         }
 	}
 	.navbar-collapse {

@@ -1,0 +1,46 @@
+/*
+  Icon Font: sesa-icons
+*/
+
+@font-face {
+  font-family: "sesa-icons";
+  src: url("../fonts/sesa-icons.eot?") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sesa-icons";
+  src: url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAASsAA0AAAAABqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEkAAAABkAAAAcdT81ok9TLzIAAAGgAAAARwAAAGBPtlwoY21hcAAAAfwAAABGAAABSuH2Ff5jdnQgAAACRAAAAAQAAAAEABEBRGdhc3AAAASIAAAACAAAAAj//wADZ2x5ZgAAAlQAAADkAAAA/BCxzVxoZWFkAAABMAAAADAAAAA2BR0+4GhoZWEAAAFgAAAAIAAAACQEDQGHaG10eAAAAegAAAAUAAAAFAQuAAxsb2NhAAACSAAAAAwAAAAMAFQA0m1heHAAAAGAAAAAHwAAACAASQBqbmFtZQAAAzgAAAEmAAACK6pC1jlwb3N0AAAEYAAAACUAAAA0TXGft3jaY2BkYGAAYskTz+Lj+W2+MnAzMYDAxUP1DjD6/y8GBqYGxmQgl4MBLA0AQ7gLYnjaY2BkYGBMZmBg0GNi+P/rfyNTAwNQBAWwAgBqDQSXeNpjYGRgYGBlsGRgYgABEMnIABJzYNADCQAACWUAtAB42mNgYUxhnMDAysDA6MOYxsDA4A6lvzJIMrQwMDAxsDIzwACjAAMCBKS5pjA0MCh8ZGQ88P8Agx5jMkQNkhIFBkYABawKgQAAuwARAAAAAACqAAAAyAAAAgD/+3jaY2BgYGaAYBkGRgYQcAHyGMF8FgYNIM0GpBkZmBgUPjL+/w/kg+n/j/mZoeqBgJGNAc5hZAISTAyogBFixXAGAMWJCOcAAAARAUQAAAAqACoAKgAqAH542k2MQUrDQBSG3/9eMlOtZBioHTduEm0QscVMSSoNuukVurI7oWt33Yi49AqewVVyAjfewit4ASnWibgQHvz///HxiMkS0QuWJKRp3IAmdasj+iwaFX/UrXCo1EiH4w63WmFbt+i4t97m3mb2ebNeY/n9auHDN+y+iPkJdzQLY3g40Al+j8/jdHQDp+ZcVteoRrnSykBNEGjYZVX6wg35QUSSyK3cwTRD+r7ZN7FEc+Snb48X9+bKjO1lddvvgfeYj5M6yRYciZxhIBLSiFsd9csTxVPOi/8+/vx0EWz6AVDkKM942o2OPWrDQBCF39qSSVyEFK7DNAELLLESGBtXIQIVSWlwlUaIRVYjmZVcuM8BUuUYOVROkid5Q1wEkoVhvnk7Pw/ADT6gcH6CR8cKU5wcj+DjzfEY9/h07GGq7hz7uFXPjifULTuVd83qYZjqWWGGwvGI+18dj/GEd8ceZurKsQ9RgeMJ9RekaHCgL4sKJfbo6HjOnQFzAo0YSyzIW+TsMajJKY7kfsIAaXM42arcdzIvAkl0vFzINremlvRobcWOlm0tx0MOFDxXs0Jr2jysiqYmX8hOyYa6G7KlLzO4iehHsGH8tvL8s6a2Ynx7R9bUXdbY0kgSadnIz2EW63AV9pb/YXLHBkuxGj6F6/sD0ZB7W9gZ21ZNLVrHkdZa/t75BTJRVrUAAHjaY2BiAIP/BxgkGbABViBmZGBiYGZkYi/Ny3QzNDAEAFu8BBQAAAAAAAAB//8AAnjaY2BgYGQAgou7zBXB9KF6BxgNAESGBokAAAA=") format("woff"),
+       url("../fonts/sesa-icons.ttf") format("truetype"),
+       url("../fonts/sesa-icons.svg#sesa-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "sesa-icons";
+    src: url("../fonts/sesa-icons.svg#sesa-icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.si-sesa-logo:before {
+  display: inline-block;
+  font-family: "sesa-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.si-sesa-logo:before { content: "\f101"; }
