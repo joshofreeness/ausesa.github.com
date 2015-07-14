@@ -368,7 +368,7 @@ section h3.section-subheading {
 }
 a > .fa-stack:hover .fa-circle {
   color: #02667f;
-  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -744,7 +744,7 @@ ul.social-buttons li a:active {
   outline: none;
 }
 .btn {
-  -webkit-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
   -webkit-transition: border-color 0.3s;
@@ -841,4 +841,34 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #038fb1;
+}
+.carousel-control {
+  text-shadow: none;
+  color: #777777;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.carousel-control:focus {
+  color: #777777;
+  outline: none;
+}
+.carousel-control:hover {
+  opacity: 1;
+  outline: none;
+  color: #038fb1;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.carousel-control.left {
+  background-image: none !important;
+  filter: none !important;
+  left: -7%;
+}
+.carousel-control.right {
+  background-image: none !important;
+  filter: none !important;
+  right: -7%;
 }

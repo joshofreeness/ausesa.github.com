@@ -49,9 +49,7 @@ a {
 	transition: fill 0.3s;
     &:hover {
     	color: @brand-primary;
-    	-webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
+    	.all-transitions;
         svg {
         	fill: @brand-primary;
         	-webkit-transition: fill 0.3s;
@@ -132,9 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 		&:hover{
 			color: @brand-primary;
 			outline: none;
-			-webkit-transition: all 0.3s;
-			-moz-transition: all 0.3s;
-			transition: all 0.3s;
+			.all-transitions;
 		}
         .si-sesa-logo {
         	margin-right: 0.35em;
@@ -173,9 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     			&:hover{
     				color: @brand-primary;
     				outline: none;
-    				-webkit-transition: all 0.3s;
-    				-moz-transition: all 0.3s;
-    				transition: all 0.3s;
+    				.all-transitions;
     			}
     		}
     	}
@@ -202,9 +196,7 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
 	    .navbar-brand {
 	        font-size: 2em;
-	        -webkit-transition: all 0.3s;
-	        -moz-transition: all 0.3s;
-	        transition: all 0.3s;
+	        .all-transitions;
 	    }
 		.navbar-nav>.active>a {
 			border-radius: 3px;
@@ -327,9 +319,7 @@ section {
 a > .fa-stack:hover .fa-circle {
 	color: darken(@brand-primary, 10%);
 
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	.all-transitions;
 }
 .fa-circle {
 	-webkit-transition: color 0.3s ease-in-out;
@@ -480,9 +470,7 @@ a > .fa-stack:hover .fa-circle {
             	margin-top: 12px;
             	line-height: 14px;
             }
-            -webkit-transition: background-color 0.3s ease-in-out;
-	    	-moz-transition: background-color 0.3s;
-	    	transition: background-color 0.3s;
+            .background-transitions;
         }
         &.timeline-inverted > .timeline-panel {
             float: right;
@@ -525,9 +513,7 @@ a > .fa-stack:hover .fa-circle {
 		&:hover {
 			text-decoration: none;
 			.timeline-image {
-				-webkit-transition: all 0.3s;
-	        	-moz-transition: all 0.3s;
-	       		transition: all 0.3s;
+				.all-transitions;
 				background-color: darken(@brand-primary, 10%);
 			}
 		}
@@ -710,9 +696,7 @@ footer {
 	    transition: color 0.3s;
 	    &:hover {
 	    	text-decoration: none;
-	    	-webkit-transition: all 0.3s;
-	        -moz-transition: all 0.3s;
-	        transition: all 0.3s;
+	    	.all-transitions;
 	    }
 	}
 }
@@ -732,9 +716,7 @@ ul.social-buttons {
 			line-height: 40px;
 			color: white;
 			outline: none;
-	        -webkit-transition: all 0.3s;
-	        -moz-transition: all 0.3s;
-	        transition: all 0.3s;
+	        .all-transitions;
 	        &:hover,
 	        &:focus,
 	        &:active {
@@ -752,16 +734,12 @@ ul.social-buttons {
 }
 
 .btn {
-	-webkit-transition: background-color 0.3s;
-	-moz-transition: background-color 0.3s;
-	transition: background-color 0.3s;
+	.background-transitions;
 	-webkit-transition: border-color 0.3s;
 	-moz-transition: border-color 0.3s;
 	transition: border-color 0.3s;
 	&:hover {
-		-webkit-transition: all 0.3s;
-	    -moz-transition: all 0.3s;
-	    transition: all 0.3s;
+		.all-transitions;
 	}
 }
 
@@ -859,4 +837,36 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @brand-primary;
+}
+
+.carousel-control {
+	text-shadow: none;
+	color: @gray;
+	opacity: 1;
+	.color-transitions;
+	&:focus {
+		color: @gray;
+		outline: none;
+	}
+	&:hover {
+		opacity: 1;
+		outline: none;
+		color: @brand-primary;
+		.color-transitions;
+	}
+	&.left {
+		background-image: none !important;
+   		filter:none !important;
+		left: -7%;
+	}
+	&.right {
+		background-image: none !important;
+   		filter:none !important;
+		right: -7%;
+	}
+	.icon-next {
+	}
+	.icon-prev {
+
+	}
 }
